@@ -1,0 +1,268 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+:root{
+  --main-bg-color: #288ecb;
+  --main-text-color: #288ecb;
+  --second-text-color: #17486a;
+  --second-bg-color: #ccc; 
+
+}
+.primary-text{
+  color: var(--main-text-color);
+}
+
+.second-text{
+  color: var(--second-text-color);
+}
+
+.primary-bg{
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg{
+  background-color: var(--second-bg-color);
+}
+
+.rounded-full{
+  border-radius: 100%;
+}
+
+#wrapper{
+  overflow: hidden;
+  background-image: linear-gradient(
+      to right,
+      #baf3d7,
+      #c2f5de
+      #cbf7e4,
+      #d4f8ea,
+      #ddfaef
+  );
+}
+
+#sidebar-wrapper{
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading{
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group{
+  width: 15rem;
+}
+
+#page-content-wrapper{
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper{
+  margin-left: 0;
+}
+
+#menu-toggle{
+  cursor: pointer;
+}
+
+.dashboard .list-group-item{
+  border: none;
+
+}
+
+
+
+.list .list-group-item{
+  border: none;
+
+}
+
+.list-group-item{
+  border: none;
+  /* padding: 20px 30px; */
+  
+}
+
+.list-group-item.active{
+  background-color: transparent;
+  color: var(--second-text-color);
+  font-weight: bold;
+  border: none;
+ 
+
+}
+.Login_pg img{
+   
+    width: 100%; 
+    height: 100%;
+   
+    position: fixed; 
+    object-fit: cover;
+     
+  }
+  .Login_pg .log_form img{
+    
+    width: 150px;
+    align-items: center;
+  }
+  .Login_pg{
+    position: relative;
+  }
+   .logo_first{
+    position: absolute;
+	top: 45px;
+	left: 500px;
+	 z-index: 2; 
+	 
+  }
+  .log_form{
+    
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    z-index: 2;
+    opacity: 80%;
+    width: 50%;
+    line-height: 50px;
+    border-radius: 10px;
+  }
+  .input_fields{
+    padding: 30px 75px 30px 75px;
+  }
+  .log_form b{
+    color: #fff;
+  }
+  .email_box{
+    width: 100%;
+    border-radius: 5px;
+    border: 0px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .psw_box{
+    width: 100%;
+    border-radius: 5px;
+    border: 0px;
+    padding-left: 15px;  
+}
+  .log_btn{
+    margin-top: 15px    ;
+    width: 100%;
+    border-radius: 5px;
+    border: 0px;
+    background-color:#1780BC;
+  }
+  .forgot_psw a{
+    justify-content: flex-end;
+    text-decoration: none;
+    color: #fff;
+  } 
+  
+  .signUp a{
+    color: #1780BC;
+    text-decoration: none;
+  }
+  .footer{
+    position: absolute;
+    top: 92%;
+    left: 530px;
+    z-index: 2;
+    width: 30%;
+    color: #fff;
+  }
+  .footer p{
+    letter-spacing: 5px;
+  }
+  /* Login2 */
+ 
+  .logo_sec{
+    position: absolute;
+	  bottom: 115%;
+	  left: 33%;
+	  z-index: 2; 
+	  width: 30%;
+  }
+  .form{
+    float: right;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    /* left: 47%; */
+    z-index: 2;
+    /* opacity: 0.5; */
+    width: 50%;
+    line-height: 50px;
+    border-radius: 15px;
+  }
+  /* .form_input_fields{
+    padding: 40px 75px 40px 75px;
+  } */
+ 
+  .form .form_input_fields .email_txt{
+    color:#000;
+  }
+  .form .form_input_fields .psw_txt{
+    color:#000;
+  }
+   .forgot_txt a{
+    color:#000;
+    text-decoration: none;
+
+  }
+  .trav_img{
+    float:left;
+    width: 100%;
+    
+  }
+  .trav_img img{
+    width: 100%;
+    height: 650px;
+  }
+  .log_btn{
+    color: #fff;
+  }
+  /* DASHBOARD */
+  .logo img{
+    width: 150px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 50px;
+  }
+  .sidebar .logo img{
+    width: 100px;
+    
+  }
+  .sidebar_menu ul li{
+    margin-top: 15px;
+    list-style: none;
+  }
+  .sidebar_menu ul li i{
+    color: #828282; 
+  }
+  .sidebar_menu ul li a{
+    text-decoration: none; 
+    color: #828282; 
+    
+  }
+  .search{
+    width: 700px;
+}
+ 
+  @media (min-width: 768px){
+    #sidebar-wrapper{
+        margin-left: 0;
+    }
+
+    #page-content-wrapper{
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper{
+        margin-left: -15rem;
+    }
+}
+
