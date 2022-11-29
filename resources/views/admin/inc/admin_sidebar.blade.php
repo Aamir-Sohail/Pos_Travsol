@@ -42,6 +42,8 @@
         <a href="{{ route('product.index') }}" class="list-group-item list-group-item-action bg-transparent second-text  text-secondary">
             <i class="bi bi-box-seam m-2"></i> Product
         </a>
+
+
         <a href="#" class="list-group-item list-group-item-action bg-transparent second-text  text-secondary">
             <i class="bi bi-cash-coin m-2"></i> Cashier
         </a>

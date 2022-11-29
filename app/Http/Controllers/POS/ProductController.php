@@ -16,6 +16,8 @@ class ProductController extends Controller
     {
       $products = Product::paginate('5');
     return view('product.index',['products' => $products]);
+    // return view('Product.add_product',['products' => $products]);
+
     }
 
     /**
@@ -34,6 +36,11 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+
+//     public function insert(){
+// $products = Product::paginate('5');
+//     }
     public function store(Request $request)
     {
         // return $request->all();
