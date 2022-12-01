@@ -41,3 +41,4 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('product',ProductController::class); //Product Index
 
 });
+Route::get('add_product',  [App\Http\Controllers\POS\ProductController::class,'view'])->name('add_product');

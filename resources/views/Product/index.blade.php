@@ -29,7 +29,7 @@
 
                                 <div class="col-sm-8"><h2>Product <b>Details</b></h2></div>
                                 <div class="col-sm-4">
-                                    <a class="btn btn-primary" href="{{ url('') }}" role="button">Add New Product</a>
+                                    <a class="btn btn-primary" href="{{ route('add_product') }}" role="button">Add New Product</a>
 
                                     <br>
                                     <div class="search-box">
@@ -76,7 +76,7 @@
 
                                         <td>
                                             <div class="btn-group">
-                                                
+
                                                 <a href="{{ url('product.edit/'.$product->id) }}" class="btn btn-info btnt-sm" data-toggle="modal"
                                                     data-target="#productedit{{ $product->id }}">
                                                     <i class="fa fa-edit"></i> Edit
@@ -93,6 +93,7 @@
                                             </div>
                                         </td>
                                     </tr>
+                                 
                                     {{-- modal for edit product --}}
 
                                     <div class="modal right fade" id="productedit{{ $product->id }}" tabindex="-1"

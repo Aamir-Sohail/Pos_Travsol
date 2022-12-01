@@ -19,8 +19,8 @@
             <br>
             {{--  working aera for the project --}}
 
-
-            <form action="{{ route('posts.store') }}" method="POST" class="needs-validation" novalidate>
+            <form action="{{ route('product.store') }}" method="post">
+            {{--  <form action="{{ route('product.store') }}" method="POST" >  --}}
                 <div class="form-row d-flex">
                   <div class="col-md-4 mb-4 ms-5">
                     <label for="validationCustom01">Product Name</label>
@@ -43,7 +43,7 @@
                     <label for="validationCustomUsername">Price</label>
                     <div class="input-group">
                       <div class="input-group-prepend">
-                        
+
                       </div>
                       <input type="INT" class="form-control" id="validationCustomUsername" placeholder="Price" aria-describedby="inputGroupPrepend" required>
                       <div class="invalid-feedback">
@@ -77,7 +77,7 @@
                   </div>
                 </div>
                 </div>
-              
+
                 <button class="btn btn-primary ms-5 mt-4" type="submit">Submit form</button>
               </form>
 

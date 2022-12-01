@@ -16,7 +16,12 @@ class ProductController extends Controller
     {
       $products = Product::paginate('5');
     return view('product.index',['products' => $products]);
-    // return view('Product.add_product',['products' => $products]);
+
+    }
+
+    public function view(){
+        $products = Product::paginate('5');
+    return view('Product.add_product',['products' => $products]);
 
     }
 
